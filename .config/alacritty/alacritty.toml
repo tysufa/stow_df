@@ -56,7 +56,7 @@ duration = 0
 TERM = "xterm-256color"
 
 [font]
-size =15
+size =17
 
 [font.bold]
 family = "JetBrainsMono Nerd Font"
