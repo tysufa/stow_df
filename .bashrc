@@ -233,7 +233,7 @@ function git_init() {
 
 # nitch
 eval "$(starship init bash)" #nécessaire pour faire fonctionner starship (qui permet d'avoir un meilleur prompt)
-# eval "$(zoxide init bash)" #permet de jump dans les dossiers les plus utilisés sans taper le chemin complet
+eval "$(zoxide init --cmd cd bash)" #permet de jump dans les dossiers les plus utilisés sans taper le chemin complet
 
 # modules a installer sur une nouvell config : neofetch (remplacer par nitch), ncdu, lsd, nvim, git
 # hollywood (inutile mais classe)
