@@ -86,8 +86,8 @@ $shell\
 $character"""
 
 [[battery.display]]
-threshold = 90
-style = 'bold red'
+threshold = 35
+style = 'bold orange'
 
 
 [bun]
