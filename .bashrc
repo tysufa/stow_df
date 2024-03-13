@@ -176,6 +176,7 @@ alias sql="cd ~/programmation/sql"
 alias bsh="cd ~/programmation/bash"
 alias gau="cd ~/programmation/go"
 
+
 alias pwdc="pwd | wl-copy" #copy pwd to clipboard
 
 alias c="clear"
@@ -219,6 +220,10 @@ alias dec='cal -m 12'
 # search for previous commands
 function hg() {
     history | grep "$1";
+}
+
+function run(){
+    g++ "$1.cpp" -o "$1.out" && ./"$1.out"
 }
 
 # init new git repo
