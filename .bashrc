@@ -165,6 +165,7 @@ alias gc="git commit -m"
 alias gcl="git clone"
 alias gp="pass -c programmation/github && git push"
 alias gt="pass -c programmation/github" #git token
+alias glog="git log --graph --topo-order --pretty='%w(100,0,6)%C(yellow)%h%C(bold)%C(black)%d %C(cyan)%ar %C(green)%an%n%C(bold)%C(white)%s %N' --abbrev-commit"
 
 #other aliases
 alias ..="cd .."
