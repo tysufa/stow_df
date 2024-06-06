@@ -1,5 +1,5 @@
 [pyprland]
-plugins = ["scratchpads"]
+plugins = ["scratchpads", "wallpapers", "expose", "fetch_client_menu"]
 
 [scratchpads.term]
 animation = "fromTop"
@@ -7,3 +7,13 @@ command = "alacritty --class alacritty-dropterm"
 class = "alacritty-dropterm"
 position = "12% 12%"
 size = "75% 75%"
+
+[wallpapers]
+path = "/home/tysufa/stow_df/backgrounds/catppuccin/" # path to the folder with background images
+interval = 10 # minutes
+recurse = true
+# Using swww
+command = "swww img --transition-type any \"[file]\""
+clear_command = "swww clear"
+# command = "hyprctl hyprpaper preload '[file]';hyprctl hyprpaper wallpaper ',[file]'"
+unique = false # set a different wallpaper for each screen
