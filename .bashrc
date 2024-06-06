@@ -182,7 +182,6 @@ alias pwdc="pwd | wl-copy" #copy pwd to clipboard
 
 alias c="clear"
 
-alias nvim="~/nvim-linux64/bin/nvim"
 
 function h () {
     cd /home/tysufa/$1
@@ -243,7 +242,7 @@ function git_init() {
 
 # nitch
 eval "$(starship init bash)" #nécessaire pour faire fonctionner starship (qui permet d'avoir un meilleur prompt)
-eval "$(zoxide init bash)" #permet de jump dans les dossiers les plus utilisés sans taper le chemin complet
+eval "$(zoxide init --cmd cd bash)" #permet de jump dans les dossiers les plus utilisés sans taper le chemin complet
 
 # modules a installer sur une nouvell config : neofetch (remplacer par nitch), ncdu, lsd, nvim, git
 # hollywood (inutile mais classe)
@@ -251,9 +250,3 @@ eval "$(zoxide init bash)" #permet de jump dans les dossiers les plus utilisés 
 
 # completion pour password store (ne marche pas de base sur arch)
 source ~/.password-store/.pass.bash-completion
-
-alias cd="z"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
